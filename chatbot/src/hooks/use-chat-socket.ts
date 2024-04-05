@@ -35,7 +35,7 @@ export const useChatSocket = ({
                     return oldData;
                 }
 
-                const newData = oldData.pages.mao((page: any) => {
+                const newData = oldData.pages.map((page: any) => {
                     return {
                         ...page,
                         items: page.items.map((item: MessageWithMemberWithProfile) => {
